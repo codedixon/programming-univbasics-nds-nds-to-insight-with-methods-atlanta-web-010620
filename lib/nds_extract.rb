@@ -7,9 +7,18 @@ require 'pp'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {
-    nds[index][:name] = nds[:movies[worldwide_grosses
-  }
+  director_index = 0
+  
+while director_index < nds.length
+ movie_index = 0
+director_name = nds[director_index][:name] 
+result[director_name] = 0
+ while movie_index < nds[director_index][:movies].length
+  result[director_name] +=  nds[director_index][:movies][movie_index][:worldwide_gross]
+  movie_index += 1
+end
+director_index += 1
+end
   return result
 end
 
