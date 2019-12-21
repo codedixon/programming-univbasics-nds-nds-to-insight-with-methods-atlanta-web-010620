@@ -9,7 +9,7 @@ require 'pp'
 def directors_totals(nds)
   director_index = 0
   result = {}
-  pp nds
+  
   
 while director_index < nds.length
  movie_index = 0
