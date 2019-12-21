@@ -33,8 +33,8 @@ while director_index < director_data.length
  movie_index = 0
 director_name = director_data[director_index][:name] 
 result[director_name] = 0
- while movie_index < nds[director_index][:movies].length
-  result[director_name] +=  nds[director_index][:movies][movie_index][:worldwide_gross]
+ while movie_index < director_data[director_index][:movies].length
+  result[director_name] +=  director_data[director_index][:movies][movie_index][:worldwide_gross]
   movie_index += 1
 end
 director_index += 1
