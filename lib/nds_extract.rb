@@ -39,5 +39,5 @@ result[director_name] = 0
 end
 director_index += 1
 end
-  return result
+  return result[director_name]
 end
