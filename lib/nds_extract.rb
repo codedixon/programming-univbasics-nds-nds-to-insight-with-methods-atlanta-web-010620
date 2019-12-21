@@ -19,6 +19,7 @@ result[director_name] = 0
 end
 director_index += 1
 end
+pp result
   return result
 end
 
