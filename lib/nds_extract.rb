@@ -39,7 +39,7 @@ def gross_for_director(director_data)
 end
   director_index += 1
 end
-return answer
+return directors
 end
 
 directors_totals(directors_database)
