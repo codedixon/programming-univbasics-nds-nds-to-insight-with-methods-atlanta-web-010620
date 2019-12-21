@@ -41,5 +41,3 @@ director_index += 1
 end
   return result
 end
-
-directors_totals(directors_database)
