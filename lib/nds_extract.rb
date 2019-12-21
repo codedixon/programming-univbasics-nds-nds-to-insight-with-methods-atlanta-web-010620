@@ -32,3 +32,5 @@ def gross_for_director(director_data)
  # director_data[index][:name] +=
 #  index += 1
 end
+
+directors_totals(directors_database)
