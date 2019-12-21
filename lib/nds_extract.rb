@@ -34,14 +34,12 @@ def gross_for_director(director_data)
   directors = director_data[director_index][:name]
   answer[directors] = 0
   while movie_index < director_data[:movies].length
-  answer[directors] += director_data[:movies][]
+  answer[directors] += director_data[director_index][:movies][movie_index][worldwide_gross]
   movie_index += 1
 end
   director_index += 1
 end
-  
-  director_data[director_index][:name] += director_data[director_index][:movies][movie_index][:worldwide_grosses]
-return director_data[:name]
+return answer
 end
 
 directors_totals(directors_database)
