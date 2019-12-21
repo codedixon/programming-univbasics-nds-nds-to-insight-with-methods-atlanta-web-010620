@@ -20,7 +20,7 @@ result[director_name] = 0
 end
 director_index += 1
 end
-  return result
+  return result[director_name]
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
